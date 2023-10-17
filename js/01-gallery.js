@@ -21,7 +21,7 @@ const galleryList = document.querySelector('.js-gallery');
 galleryList.insertAdjacentHTML('beforeend', markupGallery(galleryItems));
 galleryList.addEventListener('click', onClick);
 
-//------- Variant 1 ---------
+//------- Var 1 ---------
 
 function onClick(e) {
   e.preventDefault();
@@ -52,13 +52,13 @@ function onClick(e) {
   }
 }
 
-//------- Variant 2 ---------
+//------- Var 2 ---------
 
 // const instance = basicLightbox.create(`<img width="1280" src="" alt="">`, {
-//   onShow: instance => {
+//   onShow: (instance) => {
 //     window.addEventListener('keydown', onEscPress);
 //   },
-//   onClose: instance => {
+//   onClose: (instance) => {
 //     window.removeEventListener('keydown', onEscPress);
 //   },
 // });
@@ -84,6 +84,5 @@ function onClick(e) {
 //   if (e.code !== 'Escape') {
 //     return;
 //   }
-
 //   instance.close();
 // }
