@@ -17,9 +17,7 @@ galleryList.innerHTML = galleryItems.map(
    captionPosition: 'bottom',
  });
 
-
 //------- Var 2 ---------
-
 
 // function markupGallery(arrImages) {
 //   return arrImages
