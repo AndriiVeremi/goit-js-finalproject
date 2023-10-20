@@ -35,10 +35,10 @@ function onClick(e) {
 
   const instance = basicLightbox.create(items, {
     onShow: instance => {
-      window.addEventListener('keydown', e => onEscPress(e));
+      window.addEventListener('keydown', onEscPress);
     },
     onClose: instance => {
-      window.removeEventListener('keydown', e => onEscPress(e));
+      window.removeEventListener('keydown', onEscPress);
     },
   });
 
